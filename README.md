@@ -1,8 +1,8 @@
 # CuDeA
-Core engine for mathematical calculations
+Various computational models and Custom Design Algorithms
 
 ## Objective
-A base
+Sandbox
 
 ## Build Methods
 The build relies on CMake, version >3.16. The build was tested and built on Linux, Ubuntu 18.04.1. 
@@ -40,10 +40,4 @@ Under the folder build/tests/ all the tests, as defined in tests/ can be found a
 ## Dependency libraries
 The STD library is used extensively for containers and base algorithms. This is by choice to remove as many dependencies as posible.
 
-- Current linear algebra library used is the armadillo library
 
-
-## Quickly on the philosophy
-We chose to create multiple smaller libraries so that the user can pick and choose which libraries to use. The objective here is to cover a wide range of possibilities in computation so many of the methods won't be overlapping. I.e. if you are doing some statistical analysis you don't need the libraries from another unreleated domain, e.g. complex analysis. 
-So rather than create a monolith we create several smaller libraries which can be called. 
-The current solution still builds all the libraries, that's just because they currently aren't so large. However in the future we might setup a configuration where the user can select which libraries to use as to reduce the overhead on the local machine.
